@@ -15,7 +15,6 @@ class PreflightRequestMiddleware
     {
         $headers = getallheaders();
         if ($request->getMethod() != 'GET') {
-            error_log($headers['x-requested-with']);
             if (array_key_exists('x-requested-with', $headers) and $headers['x-requested-with'] == 'XMLHttpRequest') {
                 return $handler->handle($request);
             }
