@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://api.example.com/signup.json",
+  "title": "新規登録",
+  "type": "object",
+  "required": [
+    "family_name",
+    "given_name",
+    "email",
+    "password",
+    "password_confirm",
+    "start_time",
+    "closing_time",
+    "break_time"
+  ],
+  "properties": {
+    "family_name": {
+      "title": "姓",
+      "type": "string",
+      "maximum": 30
+    },
+    "given_name": {
+      "title": "名",
+      "type": "string",
+      "maximum": 30
+    },
+    "email": {
+      "type": "string",
+      "title": "メールアドレス",
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "title": "パスワード",
+      "format": "password"
+    },
+    "password_confirm": {
+      "type": "string",
+      "title": "パスワード(確認用)",
+      "format": "password"
+    },
+    "start_time": {
+      "type": "string",
+      "title": "始業時間",
+      "format": "time"
+    },
+    "closing_time": {
+      "type": "string",
+      "title": "終業時間",
+      "format": "time"
+    },
+    "break_time": {
+      "type": "string",
+      "title": "休憩時間",
+      "format": "time"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://api.example.com/signin.json",
+  "title": "サインイン",
+  "type": "object",
+  "required": [
+    "email",
+    "password"
+  ],
+  "properties": {
+    "email": {
+      "type": "string",
+      "title": "メールアドレス",
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "title": "パスワード",
+      "format": "password"
+    }
+  }
+}

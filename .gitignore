@@ -1,0 +1,4 @@
+# プロジェクトの除外パス
+/vendor/
+/.idea/
+/public/assets/
